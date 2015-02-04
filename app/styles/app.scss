@@ -1,0 +1,20 @@
+@import 'bower_components/susy/sass/susy';
+
+$susy : (
+  columns: 6,
+  gutters: 0
+);
+
+html, body {
+  background: red;
+}
+
+aside {
+  @include span(1 of 6);
+  background: gray;
+}
+
+main {
+  @include span(5 of 6);
+  background: blue;
+}

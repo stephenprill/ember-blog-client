@@ -1,0 +1,12 @@
+<aside>
+  {{#link-to 'posts.new'}}New Post{{/link-to}}
+
+  {{#each post in model}}
+    <h1>{{#link-to 'post' post}} {{post.title}} {{/link-to}}</h1>
+  {{/each}}
+</aside>
+
+
+<main>
+  {{outlet}}
+</main>
